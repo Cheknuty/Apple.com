@@ -1,0 +1,62 @@
+@import "./variables.css";
+@import "./fonts.css";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+html[data-active="true"] {
+    overflow: hidden;
+
+    & header {
+        height: 100%;
+        background-color: #000;
+
+        & ul:first-child {
+            display: grid;
+            grid-template-columns: calc(50% - 15px) max-content;
+            justify-content: left;
+
+            & + div {
+                transform: scaleY(1);
+            }
+
+            & li {
+                &:last-child {
+                    display: none;
+                }
+    
+                &:first-child button {
+                    width: 20px;
+                }
+            }
+        }
+        
+    }
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-primary);
+    background-color: var(--color-white);
+    color: var(--satin-deep-black);
+    
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+video {
+    width: 100%;
+    /* height: auto; */
+}
