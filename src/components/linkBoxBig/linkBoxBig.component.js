@@ -6,14 +6,14 @@ export const LinkBoxBig = ({color, text1, text2,  link1, link2}) => {
     return (
         <LinkBoxBigWrapper data-color={color}>
             {
-                color == "blue" &&
+                color === "blue" &&
                 <>
                 <Link to={link1}>{text1}</Link>
                 <Link to={link2}>{text2}</Link>
                 </>
             }
             {
-                color == "white" &&
+                color === "white" &&
                 <>
                 <Link to={link1}>{text1}</Link>
                 <Link to={link2}>{text2}</Link>

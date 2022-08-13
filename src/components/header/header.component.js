@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
-import { HeaderNav, HeaderNavIcon, HeaderNavItem, HeaderNavItemButton, HeaderNavList, HeaderWrapper } from "./header.style";
+import { HeaderNav, HeaderNavItem, HeaderNavItemButton, HeaderNavList, HeaderWrapper } from "./header.style";
 import React, { useRef } from "react";
-import { HiMenuAlt4, HiOutlineX } from "react-icons/hi"
+import { HiMenuAlt4 } from "react-icons/hi"
 import { ContainerMini } from "../containerMini/containerMini.component";
 import { BurgerMenu } from "../../modules/burgerMenu/burgerMenu.component";
 export function Header() {
     const header = useRef()
 
     const headerToggler = () => {
-        header.current.closest("html").setAttribute("data-active", header.current.closest("html").dataset.active == "true"? false : true)
+        header.current.closest("html").setAttribute("data-active", header.current.closest("html").dataset.active === "true"? false : true)
 
     }
 

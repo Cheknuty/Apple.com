@@ -1,4 +1,4 @@
-import { HelpSectionBox, HeplSectionBox, HeplSectionImg, HeplSectionTitle, HeplSectionWrapper } from "./helpSection.style";
+import { HelpSectionBox, HeplSectionImg, HeplSectionTitle, HeplSectionWrapper } from "./helpSection.style";
 import { BsArrowUpRight } from "react-icons/bs"
 
 export function HelpSection() {

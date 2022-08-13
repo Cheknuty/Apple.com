@@ -6,7 +6,7 @@ export const VideoControl = ({videoPlay, videoPause}) => {
     const button = useRef()
     const clickHandler = () => {
         const target = button.current
-        if(target.dataset.play == "true")  {
+        if(target.dataset.play === "true")  {
             videoPause()
             target.setAttribute("data-play", "false")
         }

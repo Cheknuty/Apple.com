@@ -51,7 +51,7 @@ function moveSlider(slider) {
 
 function changeMarker(buttons, postion) {
     buttons.forEach(button => {
-        if (button.id == postion) {
+        if (button.id === `${postion}`) {
             button.setAttribute("data-active", "true")
         }
 

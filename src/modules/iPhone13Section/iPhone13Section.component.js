@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ContainerMini } from "../../components/containerMini/containerMini.component";
 import { LinkBox } from "../../components/linkBox/linkBox.component";
-import { IPhone13SectionBox, IPhone13SectionLinks, IPhone13SectionSubtitle, IPhone13SectionTitle, IPhone13SectionWrapper } from "./iPhone13Section.style";
+import { IPhone13SectionSubtitle, IPhone13SectionTitle, IPhone13SectionWrapper } from "./iPhone13Section.style";
 
 
 export function IPhone13Section() {
