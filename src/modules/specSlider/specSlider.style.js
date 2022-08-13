@@ -24,6 +24,7 @@ export const SpecSliderList = styled.ul`
     grid-column-gap: 20px;
     position: relative;
     left: calc(50% - 740px);
+    transition: all 0.7s ease-in-out;
 
     @media screen and (max-width: 1485px) {
         & {
@@ -38,17 +39,71 @@ export const SpecSliderItem = styled.li`
     overflow: hidden;
     position: relative;
 
-    &[data-active="true"] {
-        color: red;
+    &[data-active="true"]{
+        & div:nth-last-of-type(2) {
+            opacity: 0;
+        }
     }
 
-    &:nth-child(1) {
+    &:nth-child(1) div:nth-last-of-type(2) {
         background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_onetap_setup__fzj1m8dhjoq6_large.jpg");
         background-repeat: no-repeat;
         background-size: auto;
         background-position-x: 30px;
     }
-    
+
+    &:nth-child(2) div:nth-last-of-type(2) {
+        background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_automatic_switching__etjisgj91gk2_large.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-x: center;
+        background-position-y: 160px;
+    }
+
+    &:nth-child(3) div:nth-last-of-type(2) {
+        background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_audio_sharing__ord9ku1kssq6_large.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-x: center;
+        background-position-y: 30px;
+    }
+
+    &:nth-child(4) div:nth-last-of-type(2) p {
+        display: inline-block;
+        background: linear-gradient(90deg,#ffa54d,#f07bc5 50%,#43aeff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 42px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -0.00043em;
+        text-align: center;
+        max-width: 320px;
+        position: absolute;
+        top: 160px;
+        left: 36px;
+    }
+
+    &:nth-child(5) div:nth-last-of-type(2) {
+        background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_announce_notifications__f2jmuafd1wey_small_2x.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-x: center;
+        background-position-y: 85px;
+        background-size: 144px;
+
+        & p {
+            font-size: 21px;
+            line-height: 1.1904761905;
+            font-weight: 600;
+            letter-spacing: .011em;
+            position: absolute;
+            top: 220px;
+            left: 50px;
+            max-width: 303px;
+        }
+    }
+
 `
 
 export const SpecSliderControl = styled.div`
@@ -67,31 +122,7 @@ export const SpecSliderButton = styled.button`
     background-color: #fff;
     border-radius: 50%;
     padding: 0;
-`
-
-export const SpecSliderRealContent = styled.span`
-
-`
-
-export const SpecSliderRealTitle = styled.h4`
-    margin: 0;
-    font-size: 24px;
-    line-height: 1.1666666667;
-    font-weight: 600;
-    letter-spacing: .009em;
-`
-
-export const SpecSliderItemOpenButton = styled.button`
-    width: 33px;
-    height: 33px;
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    border: none;
-    bottom: 23px;
-    right: 23px;
+    cursor: pointer;
 
     & svg {
         position: relative;
@@ -99,27 +130,25 @@ export const SpecSliderItemOpenButton = styled.button`
     }
 `
 
-export const SpecSliderFakeContent = styled.span`
-    margin: 0;
+export const SpecSliderBox = styled.div`
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.1 ease-in-out;
+`
+
+export const SpecSliderItemTitle = styled.h3`
+    margin: 0 0 30px 45px;
     font-size: 24px;
     line-height: 1.1666666667;
     font-weight: 600;
     letter-spacing: .009em;
+    color: var(--color-satin-deep-black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 `
 
-export const SpecSliderFakeTitle = styled.h4`
-    margin: 0;
-    font-size: 24px;
-    line-height: 1.1666666667;
-    font-weight: 600;
-    letter-spacing: .009em;
-    margin-bottom: 14px;
-`
-
-export const SpecSliderFakeDesc = styled.p`
-    font-size: 17px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: -0.022em;
+export const SpecSliderItemDesc = styled.p`
     margin: 0;
 `

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ContainerMini } from "../../components/containerMini/containerMini.component";
 import { LinkBox } from "../../components/linkBox/linkBox.component";
-import { MacBookAirSectionBox, MacBookAirSectionLinks, MacBookAirSectionSubtitle, MacBookAirSectionTitle, MacBookAirSectionWrapper } from "./macBookAirSection.style";
+import { MacBookAirSectionBox, MacBookAirSectionSubtitle, MacBookAirSectionTitle, MacBookAirSectionWrapper } from "./macBookAirSection.style";
 
 
 export function MacBookAirSection() {

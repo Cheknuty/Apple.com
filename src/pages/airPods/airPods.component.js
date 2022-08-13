@@ -19,7 +19,7 @@ export const AirPods = () => {
             <AirPodsContainer>
                 <AirPodsProductions />
             </AirPodsContainer>
-            {/* <SpecSlider /> */}
+            <SpecSlider />
             <ContainerBig>
                 <FooterPrimary />
             </ContainerBig>

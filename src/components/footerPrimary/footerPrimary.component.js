@@ -1,10 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
-import { ContainerMini } from "../containerMini/containerMini.component";
+import { Link } from "react-router-dom";
 import { FooterFakePanel } from "../footerFakePanel/footerFakePanel.component";
 import { FooterItem } from "../footerItem/footerItem.component";
-import { FooterPrimaryColumn, FooterPrimaryContainer, FooterPrimaryContent, FooterPrimaryCTA, FooterPrimaryCTABottom, FooterPrimaryCTABottomDesc, FooterPrimaryCTABottomDescSpan, FooterPrimaryCTATop, FooterPrimaryItem, FooterPrimaryItemH, FooterPrimaryList, FooterPrimaryWrapper } from "./footerPrimary.style";
+import { FooterPrimaryColumn, FooterPrimaryContainer, FooterPrimaryContent, FooterPrimaryCTA, FooterPrimaryCTABottom, FooterPrimaryCTABottomDesc, FooterPrimaryCTABottomDescSpan, FooterPrimaryCTATop, FooterPrimaryItemH, FooterPrimaryList, FooterPrimaryWrapper } from "./footerPrimary.style";
 
 export function FooterPrimary() {
     const textObject = useSelector(state => state.footer.textSource)
