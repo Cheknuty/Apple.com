@@ -8,23 +8,23 @@ const footerPrimarySlice = createSlice({
         {
             "Shop and Learn": [
                 {
-                    href: "/store",
+                    href: "/",
                     title: "Store"
                 },
                 {
-                    href: "/mac",
+                    href: "/",
                     title: "Mac"
                 },
                 {
-                    href: "/ipad",
+                    href: "/",
                     title: "iPad"
                 },
                 {
-                    href: "/iphone",
+                    href: "/",
                     title: "iPhone"
                 },
                 {
-                    href: "/watch",
+                    href: "/",
                     title: "Watch"
                 },
                 {

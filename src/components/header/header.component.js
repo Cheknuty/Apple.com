@@ -30,23 +30,23 @@ export function Header() {
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/store"}>Store</NavLink>
+                            <NavLink to={"/"}>Store</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/mac"}>Mac</NavLink>
+                            <NavLink to={"/"}>Mac</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/ipad"}>iPad</NavLink>
+                            <NavLink to={"/"}>iPad</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/iphone"}>iPhone</NavLink>
+                            <NavLink to={"/"}>iPhone</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/watch"}>Watch</NavLink>
+                            <NavLink to={"/"}>Watch</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
@@ -54,19 +54,19 @@ export function Header() {
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/tv-home"}>TV & Home</NavLink>
+                            <NavLink to={"/"}>TV & Home</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/only-on-apple"}>Only on Apple</NavLink>
+                            <NavLink to={"/"}>Only on Apple</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/accessories"}>Accessories</NavLink>
+                            <NavLink to={"/"}>Accessories</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
-                            <NavLink to={"/support"}>Support</NavLink>
+                            <NavLink to={"/"}>Support</NavLink>
                         </HeaderNavItem>
                         
                         <HeaderNavItem>
