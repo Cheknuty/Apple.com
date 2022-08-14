@@ -7,7 +7,7 @@ export const AirPodsWrapper = styled.div`
     overflow: hidden;
 
     & header {
-        position: absolute;
+        /* position: absolute; */
     }
 `
 

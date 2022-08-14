@@ -127,6 +127,11 @@ export const SliderItemText = styled.div`
         max-width: 230px;
         bottom: 175px;
 
+        &:nth-last-of-type(1){
+            color: red;
+            
+        }
+
         & button {
             margin: 0;
             margin-top: 12px;

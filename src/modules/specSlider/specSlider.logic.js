@@ -50,7 +50,6 @@ function changeCounter(value) {
 function moveSlider(ref) {
     const target = ref.current
     const width = window.innerWidth
-    console.log(width);
 
     if(width >= 1075) {
         target.style = `transform: translateX(${counter * 423}px)`
