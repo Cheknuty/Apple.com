@@ -21,6 +21,24 @@ export const SliderItemWrapper = styled.li`
             }
         }
     }
+
+    @media screen and (max-width: 800px) {
+        &:nth-child(1) div:nth-last-of-type(2) {
+            left: 43px;
+        }
+
+        &:nth-child(5) div:nth-last-of-type(2) {
+            left: 60px;
+        }
+
+        &:nth-child(8) div:nth-last-of-type(2) {
+            left: 43px;
+        }
+
+        &:nth-child(11) div:nth-last-of-type(2) {
+            left: 60px;
+        }
+    }
 `
 
 export const SliderItemImg = styled.img`

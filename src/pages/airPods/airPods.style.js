@@ -5,10 +5,6 @@ export const AirPodsWrapper = styled.div`
     background-color: var(--color-screen-glow);
     padding-top: 44px;
     overflow: hidden;
-
-    & header {
-        /* position: absolute; */
-    }
 `
 
 export const AirPodsContainer = styled.div`
