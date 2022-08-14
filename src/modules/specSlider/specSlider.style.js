@@ -12,6 +12,14 @@ export const SpecSliderTitle = styled.h3`
     letter-spacing: -0.0009em;
     margin: 0 auto 52px auto;
     max-width: 700px;
+
+    @media screen and (max-width: 735px) {
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: -0.00029em;
+        max-width: 400px;
+        margin-bottom: 27px;
+    }
 `
 
 export const SpecSliderList = styled.ul`
@@ -31,6 +39,21 @@ export const SpecSliderList = styled.ul`
             left: 0;
         }
     }
+
+    @media screen and (max-width: 1075px) {
+        & {
+            grid-template-columns: repeat(5, 350px);
+            grid-template-rows: 450px;
+        }
+    }
+
+    @media screen and (max-width: 735px) {
+        & {
+            grid-template-columns: repeat(5, 300px);
+            grid-template-rows: 410px;
+        }
+    }
+
 `
 
 export const SpecSliderItem = styled.li`
@@ -101,6 +124,63 @@ export const SpecSliderItem = styled.li`
             top: 220px;
             left: 50px;
             max-width: 303px;
+            color: #555;
+        }
+    }
+
+    @media screen and (max-width: 1075px) {
+        &:nth-child(1) div:nth-last-of-type(2) {
+            background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_onetap_setup__fzj1m8dhjoq6_medium_2x.jpg");
+            background-size: 271px;
+            background-position-y: 25px;
+            background-position-x: center;
+        }
+
+        &:nth-child(2) div:nth-last-of-type(2) {
+            background-size: 288px;
+        }
+
+        &:nth-child(4) div:nth-last-of-type(2) p {
+            font-size: 36px;
+            max-width: 267px;
+            top: 140px;
+        }
+    }
+
+    @media screen and (max-width: 735px) {
+        &:nth-child(1) div:nth-last-of-type(2) {
+            background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_onetap_setup__fzj1m8dhjoq6_small_2x.jpg");
+            background-size: 232px;
+            background-position-y: 35px;
+        }
+
+        &:nth-child(2) div:nth-last-of-type(2) {
+            background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_automatic_switching__etjisgj91gk2_small_2x.jpg");
+            background-size: 252px;
+        }
+
+        &:nth-child(3) div:nth-last-of-type(2) {
+            background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_audio_sharing__ord9ku1kssq6_small_2x.jpg");
+            background-size: 222px;
+            background-position-y: 40px;
+        }
+
+        &:nth-child(4) div:nth-last-of-type(2) p{
+            left: 15px;
+        }
+
+        &:nth-child(5) div:nth-last-of-type(2) {
+            background-image: url("https://www.apple.com/v/airpods/r/images/overview/tile_announce_notifications__f2jmuafd1wey_small_2x.jpg");
+            background-size: 127px;
+
+            & p {
+                font-size: 19px;
+                line-height: 1.2105263158;
+                letter-spacing: .012em;
+                max-width: 250px;
+                left: 25px;
+                top: 200px;
+            }
         }
     }
 
@@ -147,6 +227,16 @@ export const SpecSliderItemTitle = styled.h3`
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media screen and (max-width: 735px) {
+        & {
+            font-size: 19px;
+            line-height: 1.2105263158;
+            font-weight: 600;
+            letter-spacing: .012em;
+            margin: 0 0 20px 30px;
+        }
+    }
 `
 
 export const SpecSliderItemDesc = styled.p`

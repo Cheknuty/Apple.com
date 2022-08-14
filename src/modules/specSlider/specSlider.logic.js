@@ -49,7 +49,20 @@ function changeCounter(value) {
 
 function moveSlider(ref) {
     const target = ref.current
-    target.style = `transform: translateX(${counter * 423}px)`
+    const width = window.innerWidth
+    console.log(width);
+
+    if(width >= 1075) {
+        target.style = `transform: translateX(${counter * 423}px)`
+    }
+
+    else if(width < 1075 && width >= 735) {
+        target.style = `transform: translateX(${counter * 370}px)`
+    }
+
+    else if(width < 735) {
+        target.style = `transform: translateX(${counter * 320}px)`
+    }
 }
 
 function setDisable({next, prev}, dir) {

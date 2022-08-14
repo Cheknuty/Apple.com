@@ -8,6 +8,7 @@ export const AirPodsProductionsSection = styled.section`
     @media screen and (max-width: 735px){
         max-width: 400px;
         width: 100%;
+        padding-bottom: 76px;
     }
 `
 

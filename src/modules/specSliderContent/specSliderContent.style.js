@@ -65,4 +65,17 @@ export const SpecSliderContentButton = styled.button`
         position: relative;
         top: 1px;
     }
+
+    @media screen and (max-width: 735px) {
+        & {
+            width: 25px;
+            height: 25px;
+            bottom: 20px;
+            right: 20px;
+
+            & svg {
+                font-size: 15px;
+            }
+        }
+    }
 `
