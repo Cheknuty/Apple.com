@@ -9,7 +9,7 @@ export function Header() {
 
     const headerToggler = () => {
         header.current.closest("html").setAttribute("data-active", header.current.closest("html").dataset.active === "true"? false : true)
-
+        console.log("Click");
     }
 
     return(
@@ -79,7 +79,7 @@ export function Header() {
                         
                     </HeaderNavList>
 
-                    <BurgerMenu />
+                    <BurgerMenu click={headerToggler} />
                 </HeaderNav>
             </ContainerMini>
         </HeaderWrapper>
