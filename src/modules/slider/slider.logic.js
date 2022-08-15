@@ -1,8 +1,10 @@
 let counter = 0;
 
 export default function sliderLogic(dir, slider, sliderControl, e) {
-    const buttons = sliderControl.current.childNodes
+    
     if (dir === "next" && counter > -10) {
+        const buttons = sliderControl.current.childNodes
+
         changeCouter(--counter, slider)
         moveSlider(slider, sliderControl)
         changeMarker(buttons, -counter + 1)
@@ -10,14 +12,21 @@ export default function sliderLogic(dir, slider, sliderControl, e) {
     }
 
     else if (dir === "prev" && counter < 0) {
+        const buttons = sliderControl.current.childNodes
+
         changeCouter(++counter, slider)
         moveSlider(slider, sliderControl)
         changeMarker(buttons, -counter + 1)
         runAnimation(slider)
     }
 
-    else if (e) {
+    else if(dir.includes("swipe")) {
+        swipeCheck(e, slider, dir)
+        
+    }
 
+    else if (dir === "marker") {
+        const buttons = sliderControl.current.childNodes
         const clickedButton = e.target
 
         if (clickedButton.dataset.active) {
@@ -72,4 +81,31 @@ function runAnimation(slider) {
         if (item.id === slidesArray[-counter].id) item.setAttribute("data-active", "true")
         else  item.setAttribute("data-active", "false")
     })
+}
+
+let x1 = null;
+let x2 = null;
+
+function swipeCheck(e, slider, dir) {
+    const target = slider.current
+
+    if(dir === "swipeStart") {
+        x1 = e.touches[0].screenX
+    }
+
+    else if(dir === "swipeMove") {
+        x2 = e.touches[0].screenX
+        
+        if(x2-x1 > 0) {
+            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1) }px)`
+        }
+
+        else {
+            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1) }px)`
+        }
+    }
+
+    else if(dir === "swipeEnd") {
+        console.log("End");
+    }
 }

@@ -134,7 +134,7 @@ export const SliderItemText = styled.div`
 
     @media screen and (max-width: 1080px) {
         bottom: 300px;
-        max-width: 500px;
+        max-width: 520px;
     }
 
     @media screen and (max-width: 800px) {

@@ -4,6 +4,7 @@ import { Header } from "../../components/header/header.component"
 import { AirPodsProductions } from "../../modules/airPodsProductions/airPodsProductions.component"
 import { AirPodsSection } from "../../modules/airPodsSection/airPodsSection.component"
 import { FreeAppleMusicSection } from "../../modules/freeAppleMusicSection/freeAppleMusicSection.component"
+import { SpecSection } from "../../modules/specSection/specSection.component"
 import { SpecSlider } from "../../modules/specSlider/specSlider.component"
 import { AirPodsContainer, AirPodsWrapper } from "./airPods.style"
 
@@ -20,6 +21,7 @@ export const AirPods = () => {
                 <AirPodsProductions />
             </AirPodsContainer>
             <SpecSlider />
+            <SpecSection />
             <ContainerBig>
                 <FooterPrimary />
             </ContainerBig>

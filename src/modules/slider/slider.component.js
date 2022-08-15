@@ -11,7 +11,7 @@ export const Slider = () => {
   const imgSource = useSelector(state => state.slider.imgSource)
   const textSource = useSelector(state => state.slider.textSource)
   return (
-    <SliderWrapper>
+    <SliderWrapper onTouchStart={(e) => sliderLogic("swipeStart", slider, null, e)} onTouchMove={(e) => sliderLogic("swipeMove", slider, null, e)} onTouchEnd={(e) => sliderLogic("swipeEnd", slider, null, e)}>
 
       <SliderBody>
         <SliderSideButton onClick={() => sliderLogic("prev", slider, sliderControl, null)}></SliderSideButton>
@@ -25,7 +25,7 @@ export const Slider = () => {
         <SliderSideButton onClick={() => sliderLogic("next", slider, sliderControl, null)}></SliderSideButton>
       </SliderBody>
 
-      <SliderControl onClick={(e) => sliderLogic(null, slider, sliderControl, e)} ref={sliderControl}>
+      <SliderControl onClick={(e) => sliderLogic("marker", slider, sliderControl, e)} ref={sliderControl}>
         <SliderControlButton id="1" data-active="true"></SliderControlButton>
         <SliderControlButton id="2" data-active="false"></SliderControlButton>
         <SliderControlButton id="3" data-active="false"></SliderControlButton>
