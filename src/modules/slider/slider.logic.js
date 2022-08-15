@@ -85,6 +85,7 @@ function runAnimation(slider) {
 
 let x1 = null;
 let x2 = null;
+let h = 1260
 
 function swipeCheck(e, slider, dir) {
     const target = slider.current
@@ -96,12 +97,14 @@ function swipeCheck(e, slider, dir) {
     else if(dir === "swipeMove") {
         x2 = e.touches[0].screenX
         console.log(x2-x1);
-        if(x2-x1 > 0 && Math.abs(x2 - x1) >=10) {
-            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1)*1.2 }px)`
+        if(x2-x1 > 0) {
+            h = h + (x2 - x1)
+            target.style = `transform: translateX(${ h }px)`
         }
 
-        else if(x2 - x1 < 0 && Math.abs(x2 - x1) >=10) {
-            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1)*1.2 }px)`
+        else if(x2 - x1 < 0) {
+            h = h + (x2 - x1)
+            target.style = `transform: translateX(${ h }px)`
         }
     }
 
