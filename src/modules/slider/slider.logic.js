@@ -95,13 +95,13 @@ function swipeCheck(e, slider, dir) {
 
     else if(dir === "swipeMove") {
         x2 = e.touches[0].screenX
-        
-        if(x2-x1 > 0 && Math.abs(x2 - x1 >=20)) {
-            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1) }px)`
+        console.log(x2-x1);
+        if(x2-x1 > 0 && Math.abs(x2 - x1) >=10) {
+            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1)*1.2 }px)`
         }
 
-        else if(x2 - x1 < 0 && Math.abs(x2 - x1 >=20)) {
-            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1) }px)`
+        else if(x2 - x1 < 0 && Math.abs(x2 - x1) >=10) {
+            target.style = `transform: translateX(${ counter * 1260 + (x2 - x1)*1.2 }px)`
         }
     }
 
