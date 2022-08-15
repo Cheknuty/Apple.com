@@ -16,7 +16,7 @@ export const SliderList = styled.ul`
     left: 10px;
     z-index: -1;
     transform: translateX(calc());
-    transition: all 1s ease;
+    transition: all 0.2s ease;
 
     @media screen and (max-width: 1440px) {
         grid-template-columns: repeat(11, 980px);
