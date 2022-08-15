@@ -85,30 +85,29 @@ function runAnimation(slider) {
 
 let x1 = null;
 let x2 = null;
-let h = 1260
+let h = counter*1260
 
 function swipeCheck(e, slider, dir) {
-    const target = slider.current
+    // const target = slider.current
 
-    if(dir === "swipeStart") {
-        x1 = e.touches[0].screenX
-    }
+    // if(dir === "swipeStart") {
+    //     x1 = e.touches[0].screenX
+    // }
 
-    else if(dir === "swipeMove") {
-        x2 = e.touches[0].screenX
-        console.log(x2-x1);
-        if(x2-x1 > 0) {
-            h = h + (x2 - x1)
-            target.style = `transform: translateX(${ h }px)`
-        }
+    // else if(dir === "swipeMove") {
+    //     x2 = e.touches[0].screenX
+    //     if(x2-x1 > 0) {
+    //         h = h + Math.abs(x2 - x1)*0.1
+    //         target.style = `transform: translateX(${ h }px)`
+    //     }
 
-        else if(x2 - x1 < 0) {
-            h = h + (x2 - x1)
-            target.style = `transform: translateX(${ h }px)`
-        }
-    }
+    //     else if(x2 - x1 < 0) {
+    //         h = h - Math.abs(x2 - x1)*0.1
+    //         target.style = `transform: translateX(${ h }px)`
+    //     }
+    // }
 
-    else if(dir === "swipeEnd") {
-        console.log("End");
-    }
+    // else if(dir === "swipeEnd") {
+    //     console.log("End");
+    // }
 }
