@@ -2,6 +2,7 @@ import styled from "styled-components"
 import "../../assets/css/variables.css"
 
 export const SliderWrapper = styled.div`
+    
 `
 
 export const SliderList = styled.ul`
@@ -16,7 +17,7 @@ export const SliderList = styled.ul`
     left: 10px;
     z-index: -1;
     transform: translateX(calc());
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 
     @media screen and (max-width: 1440px) {
         grid-template-columns: repeat(11, 980px);

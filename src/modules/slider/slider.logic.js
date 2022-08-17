@@ -21,7 +21,7 @@ export default function sliderLogic(dir, slider, sliderControl, e) {
     }
 
     else if(dir.includes("swipe")) {
-        swipeCheck(e, slider, dir)
+        swipeCheck(dir, slider, sliderControl, e)
         
     }
 
@@ -30,7 +30,7 @@ export default function sliderLogic(dir, slider, sliderControl, e) {
         const clickedButton = e.target
 
         if (clickedButton.dataset.active) {
-            changeCouter(-clickedButton.id + 1, slider)
+            changeCouter(-clickedButton.id + 1,)
             moveSlider(slider, sliderControl)
             changeMarker(buttons, clickedButton.id)
             runAnimation(slider)
@@ -87,27 +87,30 @@ let x1 = null;
 let x2 = null;
 let h = counter*1260
 
-function swipeCheck(e, slider, dir) {
-    // const target = slider.current
+
+function swipeCheck(dir, slider, sliderControl, e) {
+    const target = slider.current
 
     // if(dir === "swipeStart") {
+    //     console.log("start");
     //     x1 = e.touches[0].screenX
+        
     // }
 
     // else if(dir === "swipeMove") {
     //     x2 = e.touches[0].screenX
     //     if(x2-x1 > 0) {
-    //         h = h + Math.abs(x2 - x1)*0.1
+    //         h = (x2 - x1)*2
     //         target.style = `transform: translateX(${ h }px)`
     //     }
 
     //     else if(x2 - x1 < 0) {
-    //         h = h - Math.abs(x2 - x1)*0.1
+    //         h = (x2 - x1)*2
     //         target.style = `transform: translateX(${ h }px)`
     //     }
     // }
 
     // else if(dir === "swipeEnd") {
-    //     console.log("End");
+        
     // }
 }
