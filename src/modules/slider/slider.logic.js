@@ -83,13 +83,13 @@ function runAnimation(slider) {
     })
 }
 
-let x1 = null;
-let x2 = null;
-let h = counter*1260
+// let x1 = null;
+// let x2 = null;
+// let h = counter*1260
 
 
 function swipeCheck(dir, slider, sliderControl, e) {
-    const target = slider.current
+    // const target = slider.current
 
     // if(dir === "swipeStart") {
     //     console.log("start");
